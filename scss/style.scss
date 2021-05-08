@@ -40,6 +40,10 @@ h2 {
     font-size: 42px;
 }
 
+h3 {
+    font-size: 25px;
+}
+
 /* Container */
 
 .container {
@@ -140,10 +144,108 @@ h2 {
             width: 50%;
             display: flex;
             justify-content: flex-end;
-            
+
             iframe {
                 box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
             }
         }
     }
+}
+
+.providing {
+    width: 100%;
+    height: 690px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    .providing__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 110px;
+
+        .providing__text {
+            width: 50%;
+
+            .providing__heading {
+                text-transform: uppercase;
+                letter-spacing: .001;
+                line-height: 1.3;
+                font-weight: 700;
+                opacity: .8;
+                margin-bottom: 50px;
+            }
+
+            .providing__paragraph {
+                width: 80%;
+                margin-bottom: 60px;
+            }
+
+            .providing__button {
+                width: 227px;
+                height: 55px;
+                border: 2px solid $red;
+                border-radius: 5px;
+                color: $red;
+                font-size: 18px;
+                font-weight: bold;
+                background: none;
+                cursor: pointer;
+                transition: background .2s;
+            }
+
+            .providing__button:hover {
+                background: $red;
+                color: $white;
+            }
+        }
+
+        .providing__items {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .providing__item {
+                width: 50%;
+                margin-bottom: 55px;
+
+                img {
+                    margin-bottom: 10px;
+                }
+
+                .providing__item__heading {
+                    opacity: .75;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                .providing__item__paragraph {
+                    width: 100%;
+                    letter-spacing: 0.001em;
+                    opacity: .85;
+                }
+            }
+
+            .providing__item:nth-child(1) {
+                padding-right: 50px;
+            }
+
+            .providing__item:nth-child(3) {
+                padding-right: 50px;
+            }
+
+        }
+    }
+}
+
+.providing::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    max-width: 1250px;
+    background-color: #ececec;
+    margin: 0 auto;
 }
