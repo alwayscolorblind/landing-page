@@ -249,3 +249,106 @@ h3 {
     background-color: #ececec;
     margin: 0 auto;
 }
+
+.features {
+    width: 100%;
+    height: 915px;
+    margin-top: 105px;
+    margin-bottom: 70px;
+
+    .features__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .features__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 90px;
+
+            .features__heading {
+                text-transform: uppercase;
+                opacity: .8;
+                font-weight: bold;
+                letter-spacing: 0.001em;
+                margin-bottom: 10px;
+            }
+
+            .features__paragraph {
+                text-align: center;
+                width: 500px;
+                opacity: .85;
+                margin-bottom: 30px;
+            }
+        }
+
+        .features__text::after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 131px;
+            background-color: $red;
+        }
+
+        .features__tabs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .features__tabs__radios {
+                width: 900px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 65px;
+
+                input {
+                    display: none;
+                }
+
+                label {
+
+                    .tab__element {
+                        font-size: 22px;
+                        font-weight: 600;
+                        opacity: .85;
+                        cursor: pointer;
+                        transition: opacity .4s;
+                        transition: color .2s;
+                    }
+
+                    .tab__element:hover {
+                        opacity: .7;
+                    }   
+                }
+
+                input:checked + label > .tab__element {
+                    color: $red;
+                    opacity: 1;
+                }
+            }
+
+            .features__tabs__content {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .features__tab {
+                    width: 300px;
+                    height: 290px;
+                    background: $beige;
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        }
+    }
+}
