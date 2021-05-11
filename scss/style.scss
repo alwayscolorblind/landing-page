@@ -252,7 +252,6 @@ h3 {
 
 .features {
     width: 100%;
-    height: 915px;
     margin-top: 105px;
     margin-bottom: 70px;
 
@@ -314,8 +313,7 @@ h3 {
                         font-weight: 600;
                         opacity: .85;
                         cursor: pointer;
-                        transition: opacity .4s;
-                        transition: color .2s;
+                        transition: opacity .2s, color .2s;
                     }
 
                     .tab__element:hover {
@@ -349,6 +347,60 @@ h3 {
                 }
             }
 
+        }
+    }
+}
+
+.meet {
+    width: 100%;
+
+    .meet__inner {
+
+        .meet__text {
+
+            .meet__heading {
+                opacity: .8;
+                text-transform: uppercase;
+            }
+
+            .meet__paragraph {
+
+            }
+        }
+
+        .meet__team {
+            display: flex;
+
+            .meet__team__main__image {
+                width: 320px;
+                height: 450px;
+                background: $beige;
+            }
+
+            .meet__team__text {
+
+                .meet__team__heading {
+
+                }
+
+                .meet__team__paragraph {
+
+                }
+            }
+
+            .meet__team__socialbar {
+                
+            }
+
+            .meet__team__imagebar {
+                display: flex;
+
+                .meet__team__image {
+                    width: 200px;
+                    height: 210px;
+                    background: $beige;
+                }
+            }
         }
     }
 }
