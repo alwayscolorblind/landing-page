@@ -152,7 +152,7 @@ h3 {
   letter-spacing: 0.001;
   line-height: 1.3;
   font-weight: 700;
-  opacity: 0.8;
+  opacity: 0.7;
   margin-bottom: 50px;
 }
 .providing .providing__inner .providing__text .providing__paragraph {
@@ -240,7 +240,7 @@ h3 {
 .features .features__inner .features__text .features__paragraph {
   text-align: center;
   width: 500px;
-  opacity: 0.85;
+  opacity: 0.7;
   margin-bottom: 30px;
 }
 .features .features__inner .features__text::after {
@@ -300,23 +300,128 @@ h3 {
 .meet {
   width: 100%;
 }
+.meet .meet__inner .meet__text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
 .meet .meet__inner .meet__text .meet__heading {
-  opacity: 0.8;
+  opacity: 0.7;
   text-transform: uppercase;
+  letter-spacing: 0.001em;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.meet .meet__inner .meet__text .meet__paragraph {
+  width: 450px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+.meet .meet__inner .meet__text::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 2px;
+  background-color: #ff3f40;
 }
 .meet .meet__inner .meet__team {
   display: flex;
 }
 .meet .meet__inner .meet__team .meet__team__main__image {
+  display: block;
   width: 320px;
   height: 450px;
   background: #f5f0dd;
+  margin-right: 70px;
 }
-.meet .meet__inner .meet__team .meet__team__imagebar {
+.meet .meet__inner .meet__team .meet__team__main {
+  height: 450px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.meet .meet__inner .meet__team .meet__team__imagebar .meet__team__image {
+.meet .meet__inner .meet__team .meet__team__main .meet__team__text {
+  /* Custom font-size: 30px */
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__text .meet__team__heading {
+  font-size: 30px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  letter-spacing: 0.001em;
+  font-weight: 600;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__text .meet__team__paragraph {
+  opacity: 0.7;
+  width: 630px;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__socialbar {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__socialbar .meet__sociallink {
+  font-size: 15px;
+  font-style: italic;
+  color: #000;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__socialbar .meet__sociallink:hover {
+  font-size: 15px;
+  font-style: italic;
+  color: #000;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__imagebar {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__imagebar .meet__team__image {
   width: 200px;
   height: 210px;
   background: #f5f0dd;
+  cursor: pointer;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__imagebar .name {
+  color: white;
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  margin-top: 170px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  animation: name-animation-2 0.5s;
+}
+.meet .meet__inner .meet__team .meet__team__main .meet__team__imagebar .meet__team__image:hover > .name {
+  visibility: visible;
+  animation: name-animation-1 0.5s;
+}
+
+@keyframes name-animation-1 {
+  from {
+    height: 0px;
+    margin-top: 210px;
+  }
+  to {
+    height: 40px;
+    margin-top: 170px;
+  }
+}
+@keyframes name-animation-2 {
+  from {
+    height: 40px;
+    margin-top: 170px;
+    visibility: visible;
+  }
+  to {
+    height: 0px;
+    margin-top: 210px;
+    visibility: hidden;
+  }
 }
