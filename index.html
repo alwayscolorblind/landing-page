@@ -187,14 +187,23 @@
     </section>
 
     <section class="subscribe">
-        <div class="subscribe__text">
-            <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
-            <p class="subscribe__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+        <div class="container">
+            <div class="subscribe__text">
+                <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
+                <p class="subscribe__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+            </div>
+            <form action="" class="subscribe__form">
+                <input 
+                class="subscribe__form__input" 
+                type="text" 
+                placeholder="Email Address..." 
+                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                title="Username should only contain lowercase letters. e.g. john"
+                required
+                >
+                <button class="subscribe__form__button">subscribe</button>
+            </form>
         </div>
-        <form action="">
-            <input type="text">
-            <button>subscribe</button>
-        </form>
     </section>
     <script src="scripts/main.js"></script>
 </body>
