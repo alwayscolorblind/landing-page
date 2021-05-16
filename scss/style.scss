@@ -487,6 +487,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     background-color: $beige;
+    color: white;
 
     .subscribe__text {
         display: flex;
@@ -506,6 +507,7 @@ h3 {
     .subscribe__form {
         display: flex;
         justify-content: center;
+
         
         .subscribe__form__input {
             width: 480px;
@@ -540,7 +542,13 @@ h3 {
             color: #fff;
             background-color: #ff2d2d;
             letter-spacing: 0.1em;
-            font-stretch: extra-expanded;
+            text-rendering: geometricPrecision;
+            cursor: pointer;
+            transition: opacity .2s;
+        }
+
+        .subscribe__form__button:hover {
+            opacity: .8;
         }
     }
 }
@@ -568,3 +576,4 @@ h3 {
         visibility: hidden;
     }
 }
+

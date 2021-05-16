@@ -409,6 +409,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   background-color: #f5f0dd;
+  color: white;
 }
 .subscribe .subscribe__text {
   display: flex;
@@ -456,7 +457,12 @@ h3 {
   color: #fff;
   background-color: #ff2d2d;
   letter-spacing: 0.1em;
-  font-stretch: extra-expanded;
+  text-rendering: geometricPrecision;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.subscribe .subscribe__form .subscribe__form__button:hover {
+  opacity: 0.8;
 }
 
 @keyframes name-animation-1 {

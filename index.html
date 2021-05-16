@@ -188,21 +188,23 @@
 
     <section class="subscribe">
         <div class="container">
-            <div class="subscribe__text">
-                <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
-                <p class="subscribe__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+            <div class="subscribe__inner">
+                <div class="subscribe__text">
+                    <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
+                    <p class="subscribe__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
+                </div>
+                <form action="" class="subscribe__form">
+                    <input 
+                    class="subscribe__form__input" 
+                    type="text" 
+                    placeholder="Email Address..." 
+                    pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    title="Username should only contain lowercase letters. e.g. john"
+                    required
+                    >
+                    <button class="subscribe__form__button">subscribe</button>
+                </form>
             </div>
-            <form action="" class="subscribe__form">
-                <input 
-                class="subscribe__form__input" 
-                type="text" 
-                placeholder="Email Address..." 
-                pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                title="Username should only contain lowercase letters. e.g. john"
-                required
-                >
-                <button class="subscribe__form__button">subscribe</button>
-            </form>
         </div>
     </section>
 
@@ -210,12 +212,38 @@
         <div class="container">
             <div class="message__inner">
                 <div class="message__text">
-                    <h2 class="message__heading"></h2>
-                    <p class="message__paragraph"></p>
+                    <h2 class="message__heading">get in touch</h2>
+                    <p class="message__paragraph">Lorem ipsum dolor sit amet, consectetur adipis cing elit, 
+                        sed do eiusmod tempor incididunt ut labore et.ur 
+                        adipis cing elit, sed do eiusmod tempor incididunt ut labore et. 
+                        ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                 </div class="message__text">
+
+                <form action="" class="message__form">
+                    <input class="message__name" type="text" placeholder="name">
+                    <input class="message__email" type="text" placeholder="Your Mail">
+                    <input class="message__message" type="text" placeholder="Type your message">
+                    <button class="message__button">Send message</button>
+                </form>
+
+                <div class="message__contact">
+                    <h4 class="message_contact__heading">
+                        Contact info
+                    </h4>
+                    <p class="message__contact__address">
+                        Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh
+                    </p>
+                    <p class="message__contact__email">
+                        redwan@deviserweb.com
+                    </p>
+                    <p class="message__contact__number">
+                        (+88) 017 617 46373
+                    </p>
+                </div>
             </div>
         </div>
     </section>
+
     <script src="scripts/main.js"></script>
 </body>
 </html>
