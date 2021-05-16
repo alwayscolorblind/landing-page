@@ -5,7 +5,7 @@ $beige: #f5f0dd;
 $white: #ffffff;
 $gray: #313030;
 
-body {
+html, body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     color: #000;
@@ -28,6 +28,10 @@ h6,
 p,
 i {
     margin: 0;
+}
+
+button {
+    font: inherit;
 }
 
 /* Headings */
@@ -152,6 +156,8 @@ h3 {
     }
 }
 
+/* PROVIDING SECTION */
+
 .providing {
     width: 100%;
     height: 690px;
@@ -249,6 +255,8 @@ h3 {
     background-color: #ececec;
     margin: 0 auto;
 }
+
+/* FEATURES SECTION */
 
 .features {
     width: 100%;
@@ -350,6 +358,8 @@ h3 {
         }
     }
 }
+
+/* MEET SECTION */
 
 .meet {
     width: 100%;
@@ -480,6 +490,8 @@ h3 {
     }
 }
 
+/* SUBSCRIBE SECTION */
+
 .subscribe {
     width: 100%;
     height: 510px;
@@ -549,6 +561,200 @@ h3 {
 
         .subscribe__form__button:hover {
             opacity: .8;
+        }
+    }
+}
+
+/* MESSAGE SECTION */
+
+.message {
+    margin-bottom: 110px;
+    margin-top: 110px;
+
+    .container__custom {
+        margin: 0;
+        padding-left: calc((100% - 1250px) / 2);
+    }
+    .message__inner {
+
+        .message__text {
+            height: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            .message__heading {
+                text-transform: uppercase;
+                opacity: .8;
+                letter-spacing: .001em;
+            }
+
+            .message__paragraph {
+                width: 730px;
+                opacity: .7;
+            }
+        }
+
+        .message__text::after {
+            content: "";
+            display: block;
+            width: 130px;
+            height: 2px;
+            background-color: $red;
+        }
+        .message__inner__group {
+            display: flex;
+            justify-content: space-between;
+
+            .message__form {
+                height: 480px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-right: 110px;
+    
+                .message__form__group {
+                    width: 730px;
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .message__name {
+                        width: 340px;
+                        height: 70px;
+                        padding-left: 60px;
+                        border: none;
+                        background-color: #e5e5e5;
+                        font-size: 18px;
+                        border-radius: 13px;
+                        outline: none;
+                    }
+                    .message__email {
+                        width: 340px;
+                        height: 70px;
+                        padding-left: 60px;
+                        border: none;
+                        background-color: #e5e5e5;
+                        font-size: 18px;
+                        border-radius: 13px;
+                        outline: none;
+                    }
+    
+                    .message__name::placeholder {
+                        letter-spacing: 0.025em;
+                    }
+    
+                    .message__name::placeholder, .message__email::placeholder {
+                        color: black;
+                        opacity: .7;
+                    }
+                }
+                
+                .message__message {
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 500;
+                    width: 730px;
+                    height: 250px;
+                    border: none;
+                    border-radius: 13px;
+                    background-color: #e5e5e5;
+                    font-size: 18px;
+                    resize: none;
+                    outline: none;
+                    padding-left: 60px;
+                    padding-top: 35px;
+                }
+    
+                .message__message::placeholder {
+                    font-weight: 500;
+                    color: black;
+                    opacity: .7;
+                }
+    
+                .message__button {
+                    width: 730px;
+                    height: 70px;
+                    font-size: 18px;
+                    letter-spacing: 0.025em;
+                    background-color: $red;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: #fff;
+                    outline: none;
+                    border: none;
+                }
+            }
+    
+            .message__contact {
+                background-color: #2d2d2d;
+                color: white;
+                padding-left: 80px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .message__contact__heading {
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    opacity: .8;
+                    letter-spacing: 0.025em;
+                    margin-bottom: 40px;
+                }
+    
+                .message__contact__address {
+                    width: 290px;
+                    opacity: .8;
+                    margin-bottom: 30px;
+                }
+    
+                .message__contact__email {
+                    opacity: .8;
+                    margin-bottom: 30px;
+                }
+                .message__contact__number {
+                    opacity: .8;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 110px;
+    background-color: #313030;
+
+    .footer__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer__paragraph {
+            color: #b8b8b8;
+        }
+    
+        .footer__socialbar {
+            display: flex;
+            justify-content: space-between;
+            width: 185px;
+    
+            .footer__socialicon {
+                width: 35px;
+                height: 35px;
+                background-color: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                color: #313030;
+            }
+
+            .footer__socialicon:hover {
+                opacity: .8;
+            }
         }
     }
 }

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
-body {
+html, body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   color: #000;
@@ -22,6 +22,10 @@ h6,
 p,
 i {
   margin: 0;
+}
+
+button {
+  font: inherit;
 }
 
 /* Headings */
@@ -130,6 +134,7 @@ h3 {
   box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
 }
 
+/* PROVIDING SECTION */
 .providing {
   width: 100%;
   height: 690px;
@@ -214,6 +219,7 @@ h3 {
   margin: 0 auto;
 }
 
+/* FEATURES SECTION */
 .features {
   width: 100%;
   margin-top: 105px;
@@ -297,6 +303,7 @@ h3 {
   object-fit: cover;
 }
 
+/* MEET SECTION */
 .meet {
   width: 100%;
   margin-bottom: 110px;
@@ -402,6 +409,7 @@ h3 {
   animation: name-animation-1 0.5s;
 }
 
+/* SUBSCRIBE SECTION */
 .subscribe {
   width: 100%;
   height: 510px;
@@ -462,6 +470,176 @@ h3 {
   transition: opacity 0.2s;
 }
 .subscribe .subscribe__form .subscribe__form__button:hover {
+  opacity: 0.8;
+}
+
+/* MESSAGE SECTION */
+.message {
+  margin-bottom: 110px;
+  margin-top: 110px;
+}
+.message .container__custom {
+  margin: 0;
+  padding-left: calc((100% - 1250px) / 2);
+}
+.message .message__inner .message__text {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.message .message__inner .message__text .message__heading {
+  text-transform: uppercase;
+  opacity: 0.8;
+  letter-spacing: 0.001em;
+}
+.message .message__inner .message__text .message__paragraph {
+  width: 730px;
+  opacity: 0.7;
+}
+.message .message__inner .message__text::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 2px;
+  background-color: #ff3f40;
+}
+.message .message__inner .message__inner__group {
+  display: flex;
+  justify-content: space-between;
+}
+.message .message__inner .message__inner__group .message__form {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 110px;
+}
+.message .message__inner .message__inner__group .message__form .message__form__group {
+  width: 730px;
+  display: flex;
+  justify-content: space-between;
+}
+.message .message__inner .message__inner__group .message__form .message__form__group .message__name {
+  width: 340px;
+  height: 70px;
+  padding-left: 60px;
+  border: none;
+  background-color: #e5e5e5;
+  font-size: 18px;
+  border-radius: 13px;
+  outline: none;
+}
+.message .message__inner .message__inner__group .message__form .message__form__group .message__email {
+  width: 340px;
+  height: 70px;
+  padding-left: 60px;
+  border: none;
+  background-color: #e5e5e5;
+  font-size: 18px;
+  border-radius: 13px;
+  outline: none;
+}
+.message .message__inner .message__inner__group .message__form .message__form__group .message__name::placeholder {
+  letter-spacing: 0.025em;
+}
+.message .message__inner .message__inner__group .message__form .message__form__group .message__name::placeholder, .message .message__inner .message__inner__group .message__form .message__form__group .message__email::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+.message .message__inner .message__inner__group .message__form .message__message {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  width: 730px;
+  height: 250px;
+  border: none;
+  border-radius: 13px;
+  background-color: #e5e5e5;
+  font-size: 18px;
+  resize: none;
+  outline: none;
+  padding-left: 60px;
+  padding-top: 35px;
+}
+.message .message__inner .message__inner__group .message__form .message__message::placeholder {
+  font-weight: 500;
+  color: black;
+  opacity: 0.7;
+}
+.message .message__inner .message__inner__group .message__form .message__button {
+  width: 730px;
+  height: 70px;
+  font-size: 18px;
+  letter-spacing: 0.025em;
+  background-color: #ff3f40;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+.message .message__inner .message__inner__group .message__contact {
+  background-color: #2d2d2d;
+  color: white;
+  padding-left: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.message .message__inner .message__inner__group .message__contact .message__contact__heading {
+  text-transform: uppercase;
+  font-size: 18px;
+  opacity: 0.8;
+  letter-spacing: 0.025em;
+  margin-bottom: 40px;
+}
+.message .message__inner .message__inner__group .message__contact .message__contact__address {
+  width: 290px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.message .message__inner .message__inner__group .message__contact .message__contact__email {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+.message .message__inner .message__inner__group .message__contact .message__contact__number {
+  opacity: 0.8;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  background-color: #313030;
+}
+.footer .footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__inner .footer__paragraph {
+  color: #b8b8b8;
+}
+.footer .footer__inner .footer__socialbar {
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+}
+.footer .footer__inner .footer__socialbar .footer__socialicon {
+  width: 35px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #313030;
+}
+.footer .footer__inner .footer__socialbar .footer__socialicon:hover {
   opacity: 0.8;
 }
 

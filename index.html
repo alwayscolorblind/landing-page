@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a55167000d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navigation">
         <div class="container">
             <div class="navigation__inner">
-                <a href="" class="navigation__link">HOME</a>
-                <a href="" class="navigation__link">PORTFOLIO</a>
-                <a href="" class="navigation__link">ABOUT US</a>
-                <a href="" class="navigation__link">CONTACT</a>
+                <a href=".navigation" class="navigation__link">HOME</a>
+                <a href=".providing" class="navigation__link">PORTFOLIO</a>
+                <a href=".features" class="navigation__link">ABOUT US</a>
+                <a href=".message" class="navigation__link">CONTACT</a>
             </div>
         </div>
     </nav>
@@ -209,7 +210,7 @@
     </section>
 
     <section class="message">
-        <div class="container">
+        <div class="container__custom">
             <div class="message__inner">
                 <div class="message__text">
                     <h2 class="message__heading">get in touch</h2>
@@ -218,31 +219,50 @@
                         adipis cing elit, sed do eiusmod tempor incididunt ut labore et. 
                         ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                 </div class="message__text">
-
-                <form action="" class="message__form">
-                    <input class="message__name" type="text" placeholder="name">
-                    <input class="message__email" type="text" placeholder="Your Mail">
-                    <input class="message__message" type="text" placeholder="Type your message">
-                    <button class="message__button">Send message</button>
-                </form>
-
-                <div class="message__contact">
-                    <h4 class="message_contact__heading">
-                        Contact info
-                    </h4>
-                    <p class="message__contact__address">
-                        Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh
-                    </p>
-                    <p class="message__contact__email">
-                        redwan@deviserweb.com
-                    </p>
-                    <p class="message__contact__number">
-                        (+88) 017 617 46373
-                    </p>
+                <div class="message__inner__group">
+                    <form action="" class="message__form">
+                        <div class="message__form__group">
+                            <input class="message__name" type="text" placeholder="Name">
+                            <input class="message__email" type="text" placeholder="Your Mail">
+                        </div>
+                        <textarea class="message__message" placeholder="Type your message"></textarea>
+                        <button class="message__button">Send message</button>
+                    </form>
+    
+                    <div class="message__contact">
+                        <h4 class="message__contact__heading">
+                            Contact info
+                        </h4>
+                        <p class="message__contact__address">
+                            Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh
+                        </p>
+                        <p class="message__contact__email">
+                            redwan@deviserweb.com
+                        </p>
+                        <p class="message__contact__number">
+                            (+88) 017 617 46373
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <p class="footer__paragraph">
+                    © Copyright @Junaed 2016, All rights reserved.
+                </p>
+                <div class="footer__socialbar">
+                    <a href="" class="footer__socialicon"><i class="fab fa-twitter"></i></a>
+                    <a href="" class="footer__socialicon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="" class="footer__socialicon"><i class="fab fa-google-plus-g"></i></i></a>
+                    <a href="" class="footer__socialicon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="scripts/main.js"></script>
 </body>
